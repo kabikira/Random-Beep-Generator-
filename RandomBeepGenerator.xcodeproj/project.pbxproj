@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3B196109294E0524003798CE /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3B196108294E0524003798CE /* AudioKit */; };
+		3B19610B294F1A74003798CE /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B19610A294F1A74003798CE /* TestView.swift */; };
+		3B19610D294F617F003798CE /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B19610C294F617F003798CE /* SubView.swift */; };
+		3B19610F294F61C6003798CE /* SignalGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B19610E294F61C6003798CE /* SignalGenerator.swift */; };
+		3B196112294F6C17003798CE /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3B196111294F6C17003798CE /* AudioKitUI */; };
 		3B4645C2294DF3950083EEE1 /* RandomBeepGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4645C1294DF3950083EEE1 /* RandomBeepGeneratorApp.swift */; };
 		3B4645C6294DF3960083EEE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4645C5294DF3960083EEE1 /* Assets.xcassets */; };
 		3B4645C9294DF3960083EEE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4645C8294DF3960083EEE1 /* Preview Assets.xcassets */; };
@@ -15,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B19610A294F1A74003798CE /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		3B19610C294F617F003798CE /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		3B19610E294F61C6003798CE /* SignalGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalGenerator.swift; sourceTree = "<group>"; };
 		3B4645BE294DF3950083EEE1 /* RandomBeepGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomBeepGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4645C1294DF3950083EEE1 /* RandomBeepGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBeepGeneratorApp.swift; sourceTree = "<group>"; };
 		3B4645C5294DF3960083EEE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B196112294F6C17003798CE /* AudioKitUI in Frameworks */,
 				3B196109294E0524003798CE /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +63,10 @@
 			children = (
 				3B4645C1294DF3950083EEE1 /* RandomBeepGeneratorApp.swift */,
 				3B4645D4294DFF1D0083EEE1 /* MainView.swift */,
+				3B19610A294F1A74003798CE /* TestView.swift */,
+				3B19610C294F617F003798CE /* SubView.swift */,
 				3B4645C5294DF3960083EEE1 /* Assets.xcassets */,
+				3B19610E294F61C6003798CE /* SignalGenerator.swift */,
 				3B4645C7294DF3960083EEE1 /* Preview Content */,
 			);
 			path = RandomBeepGenerator;
@@ -87,6 +98,7 @@
 			name = RandomBeepGenerator;
 			packageProductDependencies = (
 				3B196108294E0524003798CE /* AudioKit */,
+				3B196111294F6C17003798CE /* AudioKitUI */,
 			);
 			productName = RandomBeepGenerator;
 			productReference = 3B4645BE294DF3950083EEE1 /* RandomBeepGenerator.app */;
@@ -118,6 +130,7 @@
 			mainGroup = 3B4645B5294DF3940083EEE1;
 			packageReferences = (
 				3B196107294E0524003798CE /* XCRemoteSwiftPackageReference "AudioKit" */,
+				3B196110294F6C17003798CE /* XCRemoteSwiftPackageReference "AudioKitUI" */,
 			);
 			productRefGroup = 3B4645BF294DF3950083EEE1 /* Products */;
 			projectDirPath = "";
@@ -145,6 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B19610B294F1A74003798CE /* TestView.swift in Sources */,
+				3B19610F294F61C6003798CE /* SignalGenerator.swift in Sources */,
+				3B19610D294F617F003798CE /* SubView.swift in Sources */,
 				3B4645D5294DFF1D0083EEE1 /* MainView.swift in Sources */,
 				3B4645C2294DF3950083EEE1 /* RandomBeepGeneratorApp.swift in Sources */,
 			);
@@ -203,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,7 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +329,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,6 +375,14 @@
 				kind = branch;
 			};
 		};
+		3B196110294F6C17003798CE /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -366,6 +390,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3B196107294E0524003798CE /* XCRemoteSwiftPackageReference "AudioKit" */;
 			productName = AudioKit;
+		};
+		3B196111294F6C17003798CE /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B196110294F6C17003798CE /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

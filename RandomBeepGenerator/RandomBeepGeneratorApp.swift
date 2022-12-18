@@ -11,7 +11,9 @@ import SwiftUI
 struct RandomBeepGeneratorApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+//            MainView()
+//            TestView()
+            SubView()
         }
     }
 }
